@@ -1,0 +1,69 @@
+body {
+  font-family: "Helvetica";
+  text-align: left;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  padding: 20px 0;
+}
+
+h3,
+h4 {
+  font-weight: 300;
+}
+
+ul {
+  padding-left: 0;
+}
+
+p,
+li {
+  font-weight: 200;
+}
+
+li {
+  text-decoration-style: none;
+  display: inline;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+nav {
+  width: 200px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  border-right: solid 1px #CCC;
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+nav a:visited {
+  color: #444;
+}
+
+nav .person {
+  margin-left: 30px;
+}
+
+.main {
+  margin-left: 200px;
+  padding: 0 100px;
+}
+
+.hide {
+  display: none;
+}
