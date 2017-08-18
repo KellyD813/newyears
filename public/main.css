@@ -1,9 +1,26 @@
+.hide {
+  display: none;
+}
+
 body {
-  font-family: "Helvetica";
   text-align: left;
   background: #f4f4f7;
   color: #444;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+.main li,
+.logo,
+.info {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -13,8 +30,16 @@ h1 {
   padding: 20px 0;
 }
 
+h2 {
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  padding: 20px 0;
+}
+
 h3,
-h4 {
+h4,
+.main li {
   font-weight: 300;
 }
 
@@ -55,6 +80,20 @@ nav a:visited {
   color: #444;
 }
 
+nav a h3,
+nav a h4 {
+  border-bottom: 2px solid transparent;
+}
+
+nav a h3:hover,
+nav a h4:hover {
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 nav .person {
   margin-left: 30px;
 }
@@ -64,6 +103,17 @@ nav .person {
   padding: 0 100px;
 }
 
-.hide {
-  display: none;
+.main li {
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.main p {
+  line-height: 2;
+  width: 900px;
+}
+
+.info {
+  font-weight: 500;
 }
