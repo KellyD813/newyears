@@ -1,3 +1,5 @@
+/* -- General -- */
+
 .hide {
   display: none;
 }
@@ -7,20 +9,20 @@ body {
   background: #f4f4f7;
   color: #444;
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-.main li,
-.logo,
-.info {
   font-family: 'Roboto', sans-serif;
 }
 
-p {
+p,
+.about li,
+.person {
   font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: #444;
 }
 
 h1 {
@@ -30,90 +32,86 @@ h1 {
   padding: 20px 0;
 }
 
-h2 {
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+.main,
+.about {
+  margin-left: 300px;
+  padding: 0 100px;
 }
 
-h3,
-h4,
-.main li {
-  font-weight: 300;
-}
-
-ul {
-  padding-left: 0;
-}
-
-p,
-li {
-  font-weight: 200;
-}
-
-li {
-  text-decoration-style: none;
-  display: inline;
-  cursor: pointer;
-}
-
-li:hover {
-  text-decoration: underline;
-}
+/* -- Sidebar -- */
 
 nav {
   width: 200px;
-  padding: 0 20px;
+  padding: 0 30px;
   position: fixed;
   top: 0;
   bottom: 0;
   border-right: solid 1px #CCC;
 }
 
-nav a {
-  text-decoration: none;
-  padding-bottom: 5px;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  border-bottom: #CCC solid 1px;
 }
 
-nav a:visited {
-  color: #444;
+.page {
+  font-size: 22px;
+  font-weight: 700;
 }
 
-nav a h3,
-nav a h4 {
-  border-bottom: 2px solid transparent;
-}
-
-nav a h3:hover,
-nav a h4:hover {
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-nav .person {
+.person {
   margin-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.main {
-  margin-left: 200px;
-  padding: 0 100px;
+.page,
+.person {
+  padding-bottom: 25px;
+}
+
+/* -- Main -- */
+
+.main ul {
+  padding: 0;
 }
 
 .main li {
+  text-decoration-style: none;
+  display: inline;
+  cursor: pointer;
+  font-size: 28px;
   font-weight: 500;
-  font-size: 18px;
   margin-right: 15px;
 }
 
 .main p {
-  line-height: 2;
+  line-height: 1;
   width: 900px;
 }
 
 .info {
+  margin-bottom: 25px;
+  border-bottom: #CCC solid 1px;
+  padding-bottom: 25px;
+}
+
+.part-title {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 10px;
+}
+
+/* -- About -- */
+
+.about {
+  margin-bottom: 100px;
+}
+
+.participant-info {
   font-weight: 500;
 }
