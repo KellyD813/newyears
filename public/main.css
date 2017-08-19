@@ -89,7 +89,7 @@ nav {
 }
 
 .main p {
-  line-height: 1;
+  line-height: 1.5;
   width: 900px;
 }
 
@@ -106,6 +106,19 @@ nav {
   padding-right: 10px;
 }
 
+.reveal-card {
+  background: #CCC;
+}
+
+.month-container div {
+  padding-top: 10px;
+  width: 1000px;
+}
+
+.month-container p {
+  padding-bottom: 10px;
+}
+
 /* -- About -- */
 
 .about {
@@ -114,4 +127,12 @@ nav {
 
 .participant-info {
   font-weight: 500;
+}
+
+.about p {
+  margin: 0;
+}
+
+.about {
+  width: 1000px;
 }
