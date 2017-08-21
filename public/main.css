@@ -28,7 +28,7 @@ a:visited {
 h1 {
   font-size: 65px;
   line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
+  border-bottom: #cccccc solid 1px;
   padding: 20px 0;
 }
 
@@ -46,7 +46,7 @@ nav {
   position: fixed;
   top: 0;
   bottom: 0;
-  border-right: solid 1px #CCC;
+  border-right: solid 1px #cccccc;
 }
 
 .logo {
@@ -54,7 +54,7 @@ nav {
   font-weight: 700;
   padding: 25px 0;
   margin-bottom: 25px;
-  border-bottom: #CCC solid 1px;
+  border-bottom: #cccccc solid 1px;
 }
 
 .page {
@@ -95,7 +95,7 @@ nav {
 
 .info {
   margin-bottom: 25px;
-  border-bottom: #CCC solid 1px;
+  border-bottom: #cccccc solid 1px;
   padding-bottom: 25px;
 }
 
@@ -107,7 +107,7 @@ nav {
 }
 
 .reveal-card {
-  background: #CCC;
+  background: #cccccc;
 }
 
 .month-container div {
@@ -117,6 +117,19 @@ nav {
 
 .month-container p {
   padding-bottom: 10px;
+}
+
+.underline {
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 10px;
+}
+
+.aug,
+.sep,
+.oct,
+.nov,
+.dec {
+  color: #cccccc;
 }
 
 /* -- About -- */
