@@ -1,5 +1,3 @@
-/* -- General -- */
-
 .hide {
   display: none;
 }
@@ -30,67 +28,57 @@ h1 {
   line-height: 1.2em;
   border-bottom: #cccccc solid 1px;
   padding: 20px 0;
+  margin-top: 0;
 }
-
-.main,
-.about {
-  margin-left: 300px;
-  padding: 0 100px;
-}
-
-/* -- Sidebar -- */
 
 nav {
-  width: 200px;
-  padding: 0 30px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  border-right: solid 1px #cccccc;
+  text-align: center;
+}
+
+.main-nav-links {
+  border-bottom: #cccccc solid 1px;
+}
+
+.part-nav-links {
+  padding: 15px 0;
 }
 
 .logo {
   font-size: 24px;
   font-weight: 700;
-  padding: 25px 0;
-  margin-bottom: 25px;
+  padding: 15px 0;
   border-bottom: #cccccc solid 1px;
+  text-align: center;
 }
 
 .page {
   font-size: 22px;
   font-weight: 700;
+  display: inline-block;
+  padding: 15px 10px;
 }
 
 .person {
-  margin-left: 30px;
-  font-size: 16px;
-  font-weight: 500;
+  display: none;
 }
 
-.page,
-.person {
-  padding-bottom: 25px;
+.person.block {
+  display: block;
+  padding-bottom: 15px;
 }
-
-/* -- Main -- */
 
 .main ul {
   padding: 0;
 }
 
 .main li {
-  text-decoration-style: none;
-  display: inline;
+  display: inline-block;
   cursor: pointer;
   font-size: 28px;
-  font-weight: 500;
   margin-right: 15px;
-}
-
-.main p {
-  line-height: 1.5;
-  width: 900px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: solid 1px transparent;
 }
 
 .info {
@@ -106,21 +94,11 @@ nav {
   padding-right: 10px;
 }
 
-.reveal-card {
-  background: #cccccc;
-}
-
 .month-container div {
   padding-top: 10px;
-  width: 1000px;
 }
 
 .month-container p {
-  padding-bottom: 10px;
-}
-
-.underline {
-  border-bottom: solid 1px #cccccc;
   padding-bottom: 10px;
 }
 
@@ -132,20 +110,86 @@ nav {
   color: #cccccc;
 }
 
-/* -- About -- */
-
+.main,
 .about {
-  margin-bottom: 100px;
-}
-
-.participant-info {
-  font-weight: 500;
+  padding-bottom: 75px;
 }
 
 .about p {
   margin: 0;
 }
 
+.main li.underline,
+.underline,
+.about p a {
+  border-bottom: solid 1px #1cd8d9;
+}
+
+.about .process {
+  padding-bottom: 15px;
+}
+
+.main p,
+.about p,
+.about li {
+  line-height: 2;
+}
+
+.main,
 .about {
-  width: 1000px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+
+  .main,
+  .about {
+    margin-left: 300px;
+    padding: 0 100px;
+  }
+
+  nav {
+    width: 200px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    border-right: solid 1px #cccccc;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    border-bottom: #cccccc solid 1px;
+    text-align: left;
+  }
+
+  .page,
+  .person {
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .underline {
+    padding-bottom: 10px;
+  }
+
+  .about {
+    margin-bottom: 100px;
+    width: 1000px;
+  }
+
+  .main p {
+    width: 900px;
+  }
+
+  .month-container div {
+    padding-top: 10px;
+    width: 1000px;
+  }
+
 }
