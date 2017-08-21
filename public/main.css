@@ -147,7 +147,7 @@ nav {
   .main,
   .about {
     margin-left: 300px;
-    padding: 0 100px;
+    padding: 0 100px 75px 100px;
   }
 
   nav {
@@ -157,6 +157,7 @@ nav {
     top: 0;
     bottom: 0;
     border-right: solid 1px #cccccc;
+    text-align: left;
   }
 
   .logo {
@@ -166,6 +167,14 @@ nav {
     margin-bottom: 25px;
     border-bottom: #cccccc solid 1px;
     text-align: left;
+  }
+
+  .person {
+    margin-left: 50px;
+  }
+
+  .page {
+    padding: 0;
   }
 
   .page,
@@ -190,6 +199,11 @@ nav {
   .month-container div {
     padding-top: 10px;
     width: 1000px;
+  }
+
+  .main-nav-links,
+  .participants-link.underline {
+    border-bottom: none;
   }
 
 }
