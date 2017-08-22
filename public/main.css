@@ -227,9 +227,19 @@ nav .person.block {
     width: 1050px;
   }
 
+  .main .blurb {
+    float: left;
+    width: 300px;
+    padding-top: 145px;
+  }
+
+  .nonagon {
+    padding: 50px;
+  }
+
   .nonagon > div {
     position: absolute;
-    left: 550px;
+    left: 925px;
     text-align: center;
   }
 
