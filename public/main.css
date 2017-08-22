@@ -3,11 +3,11 @@
 }
 
 body {
-  text-align: left;
+  margin: 0;
   background: #f4f4f7;
   color: #444;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
+  line-height: 2;
 }
 
 p,
@@ -18,51 +18,56 @@ p,
 
 a,
 a:visited {
-  text-decoration: none;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   color: #444;
+  text-decoration: none;
 }
 
 h1 {
+  padding: 25px 0;
+  margin: 0;
+  border-bottom: #cccccc solid 1px;
   font-size: 65px;
   line-height: 1.2em;
-  border-bottom: #cccccc solid 1px;
-  padding: 20px 0;
-  margin-top: 0;
 }
 
 nav {
   text-align: center;
 }
 
-.main-nav-links {
+nav .participants-link:hover,
+.main .month-container li:hover {
+  cursor: pointer;
+}
+
+nav .logo {
+  padding: 0;
   border-bottom: #cccccc solid 1px;
-}
-
-.part-nav-links {
-  padding: 15px 0;
-}
-
-.logo {
   font-size: 24px;
   font-weight: 700;
-  padding: 15px 0;
-  border-bottom: #cccccc solid 1px;
   text-align: center;
 }
 
-.page {
-  font-size: 22px;
-  font-weight: 700;
-  display: inline-block;
-  padding: 15px 10px;
+nav .main-nav-links {
+  border-bottom: #cccccc solid 1px;
 }
 
-.person {
+nav .part-nav-links {
+  padding: 15px 0;
+}
+
+nav .page {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav .person {
   display: none;
 }
 
-.person.block {
+nav .person.block {
   display: block;
   padding-bottom: 15px;
 }
@@ -73,50 +78,60 @@ nav {
 
 .main li {
   display: inline-block;
-  cursor: pointer;
-  font-size: 28px;
-  margin-right: 15px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  margin: 0 15px 15px 0;
+  padding-bottom: 3px;
   border-bottom: solid 1px transparent;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.info {
-  margin-bottom: 25px;
+.main .info-container {
+  padding: 25px 0;
   border-bottom: #cccccc solid 1px;
-  padding-bottom: 25px;
 }
 
-.part-title {
+.main .info-container,
+.main .month-container {
+  padding: 25px 0;
+}
+
+.main .part-title {
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  padding-right: 10px;
 }
 
-.month-container div {
+.main .month-container div {
   padding-top: 10px;
 }
 
-.month-container p {
+.main .month-container p {
   padding-bottom: 10px;
 }
 
-.aug,
-.sep,
-.oct,
-.nov,
-.dec {
+.main .aug,
+.main .sep,
+.main .oct,
+.main .nov,
+.main .dec {
   color: #cccccc;
+}
+
+.main .aug:hover,
+.main .sep:hover,
+.main .oct:hover,
+.main .nov:hover,
+.main .dec:hover {
+  cursor: default;
 }
 
 .main,
 .about {
   padding-bottom: 75px;
-}
-
-.about p {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .main li.underline,
@@ -125,85 +140,69 @@ nav {
   border-bottom: solid 1px #1cd8d9;
 }
 
+.about p {
+  margin: 0;
+}
+
 .about .process {
   padding-bottom: 15px;
 }
 
-.main p,
-.about p,
-.about li {
-  line-height: 2;
-}
-
-.main,
-.about {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media (min-width: 768px) {
 
-  .main,
-  .about {
-    margin-left: 300px;
-    padding: 0 100px 75px 100px;
-  }
-
   nav {
-    width: 200px;
-    padding: 0 30px;
     position: fixed;
-    top: 0;
     bottom: 0;
+    top: 0;
+    padding: 0 30px;
+    width: 200px;
     border-right: solid 1px #cccccc;
     text-align: left;
   }
 
-  .logo {
-    font-size: 24px;
-    font-weight: 700;
+  nav .logo {
     padding: 25px 0;
     margin-bottom: 25px;
-    border-bottom: #cccccc solid 1px;
     text-align: left;
   }
 
-  .person {
-    margin-left: 50px;
-  }
-
-  .page {
+  nav .part-nav-links {
     padding: 0;
   }
 
-  .page,
-  .person {
+  nav .page,
+  nav .person {
     display: block;
     padding-bottom: 25px;
+  }
+
+  nav .person {
+    margin-left: 50px;
+  }
+
+  nav .main-nav-links,
+  nav .participants-link.underline {
+    border-bottom: none;
+  }
+
+  nav .participants-link:hover {
+    cursor: default;
+  }
+
+  nav .underline {
+    border-bottom: none;
   }
 
   .underline {
     padding-bottom: 10px;
   }
 
+  .main,
   .about {
+    margin-left: 215px;
+    padding: 0 100px 75px 100px;
     margin-bottom: 100px;
-    width: 1000px;
-  }
-
-  .main p {
-    width: 900px;
-  }
-
-  .month-container div {
-    padding-top: 10px;
-    width: 1000px;
-  }
-
-  .main-nav-links,
-  .participants-link.underline {
-    border-bottom: none;
+    width: 55%;
   }
 
 }
