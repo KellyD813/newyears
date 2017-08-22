@@ -24,7 +24,7 @@ a:visited {
 }
 
 h1 {
-  padding: 25px 0;
+  padding: 10px 0 25px 0;
   margin: 0;
   border-bottom: #cccccc solid 1px;
   font-size: 65px;
@@ -59,7 +59,7 @@ nav .part-nav-links {
 nav .page {
   display: inline-block;
   padding: 0 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -85,6 +85,12 @@ nav .person.block {
   font-weight: 700;
 }
 
+.main .month-container li {
+  margin: 0 15px 5px 0;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
 .main .info-container {
   padding: 25px 0;
   border-bottom: #cccccc solid 1px;
@@ -98,7 +104,7 @@ nav .person.block {
 .main .part-title {
   padding-right: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -150,6 +156,10 @@ nav .person.block {
 
 @media (min-width: 768px) {
 
+  h1 {
+    padding: 25px 0 25px 0;
+  }
+  
   nav {
     position: fixed;
     bottom: 0;
@@ -173,11 +183,15 @@ nav .person.block {
   nav .page,
   nav .person {
     display: block;
-    padding-bottom: 25px;
+  }
+
+  nav .page {
+    padding-bottom: 20px;
   }
 
   nav .person {
     margin-left: 50px;
+    padding-bottom: 15px;
   }
 
   nav .main-nav-links,
@@ -205,4 +219,10 @@ nav .person.block {
     width: 55%;
   }
 
+}
+
+@media (min-width: 1350px) {
+  .main .month-container ul {
+    width: 1050px;
+  }
 }
