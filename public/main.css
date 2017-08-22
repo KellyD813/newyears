@@ -159,7 +159,7 @@ nav .person.block {
   h1 {
     padding: 25px 0 25px 0;
   }
-  
+
   nav {
     position: fixed;
     bottom: 0;
@@ -222,7 +222,51 @@ nav .person.block {
 }
 
 @media (min-width: 1350px) {
+
   .main .month-container ul {
     width: 1050px;
   }
+
+  .nonagon > div {
+    position: absolute;
+    left: 550px;
+    text-align: center;
+  }
+
+  .a {
+    transform: translate(90px, 0);
+  }
+
+  .b {
+    transform: translate(280px, 70px);
+  }
+
+  .c {
+    transform: translate(380px, 245px);
+  }
+
+  .d {
+    transform: translate(345px, 440px);
+  }
+
+  .e {
+    transform: translate(190px, 570px);
+  }
+
+  .f {
+    transform: translate(-10px, 570px);
+  }
+
+  .g {
+    transform: translate(-160px, 445px);
+  }
+
+  .h {
+    transform: translate(-200px, 245px);
+  }
+
+  .i {
+    transform: translate(-100px, 75px);
+  }
+
 }
