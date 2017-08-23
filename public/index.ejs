@@ -1,4 +1,4 @@
-<div class="main">
+<div class="homepage">
   <h1>Resolution Project</h1>
   <h3 class="blurb">The Resolution Project follows nine people over the 2017 year. These nine people declared a New Year's resolution in January in hopes to complete their goal by the end of December.</h3>
   <div class="nonagon">
@@ -11,10 +11,12 @@
     <div class="icons mitzi"><a href="/people/mitzi"><img src="/images/mitzi.gif" alt="scale"></a></div>
     <div class="icons olivia"><a href="/people/olivia"><img src="/images/olivia.gif" alt="pencil"></a></div>
     <div class="icons zach"><a href="/people/zach"><img src="/images/zach.gif" alt="handcuffs"></a></div>
-    
+
     <% for (var slug in public.people._data){ %>
       <div id=<%= public.people._data[slug].Selector %> class="blurb-container">
-        <h2><%= public.people._data[slug].Name %></h2>
+        <a href=<%= "/people/" + public.people._data[slug].Selector %>>
+          <h2><%= public.people._data[slug].Name %></h2>
+        </a>
         <div><%= public.people._data[slug].Resolution %></div>
       </div>
     <% }; %>

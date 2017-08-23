@@ -72,15 +72,19 @@ nav .person.block {
   padding-bottom: 15px;
 }
 
-.main .blurb-container {
+.homepage h2 {
+  display: inline-block;
+}
+
+.homepage .blurb-container {
   display: none;
 }
 
-.main .blurb-container.display {
+.homepage .blurb-container.display {
   display: block;
 }
 
-.main .blurb-container div {
+.homepage .blurb-container div {
   width: 200px;
 }
 
@@ -154,7 +158,8 @@ nav .person.block {
 
 .main li.underline,
 .underline,
-.about a {
+.about a,
+.homepage h2 {
   border-bottom: solid 1px #1cd8d9;
 }
 
@@ -223,6 +228,7 @@ nav .person.block {
     padding-bottom: 10px;
   }
 
+  .homepage,
   .main,
   .about {
     margin-left: 215px;
@@ -239,7 +245,7 @@ nav .person.block {
     width: 1050px;
   }
 
-  .main .blurb {
+  .homepage .blurb {
     float: left;
     width: 300px;
     padding-top: 145px;
@@ -303,7 +309,7 @@ nav .person.block {
   }
 
   .blurb-container {
-    transform: translate(70px, 285px);
+    transform: translate(70px, 280px);
   }
 
 }
