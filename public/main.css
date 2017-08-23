@@ -234,49 +234,64 @@ nav .person.block {
   }
 
   .nonagon {
-    padding: 50px;
+    padding-top: 5px;
   }
 
   .nonagon > div {
     position: absolute;
-    left: 925px;
+    left: 900px;
     text-align: center;
   }
 
-  .a {
+  .icons {
+    border-radius: 90px;
+    padding: 25px;
+  }
+
+  .icons:hover {
+    background: rgba(0, 216, 218, .2);
+    border-radius: 90px;
+    padding: 25px;
+  }
+
+  .alex {
     transform: translate(90px, 0);
   }
 
-  .b {
+  .at {
     transform: translate(280px, 70px);
   }
 
-  .c {
+  .becca {
     transform: translate(380px, 245px);
   }
 
-  .d {
+  .george {
     transform: translate(345px, 440px);
   }
 
-  .e {
+  .jack {
     transform: translate(190px, 570px);
   }
 
-  .f {
+  .jane {
     transform: translate(-10px, 570px);
   }
 
-  .g {
+  .mitzi {
     transform: translate(-160px, 445px);
   }
 
-  .h {
+  .olivia {
     transform: translate(-200px, 245px);
   }
 
-  .i {
+  .zach {
     transform: translate(-100px, 75px);
+  }
+
+  .text {
+    transform: translate(115px, 315px);
   }
 
 }
