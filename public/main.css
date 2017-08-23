@@ -159,8 +159,9 @@ nav .person.block {
 .main li.underline,
 .underline,
 .about a,
-.homepage h2 {
-  border-bottom: solid 1px #1cd8d9;
+.homepage h2,
+.main a {
+  border-bottom: solid 2px #1cd8d9;
 }
 
 .about p {
@@ -241,6 +242,11 @@ nav .person.block {
 
 @media (min-width: 1350px) {
 
+  h1,
+  .main .info-container {
+    width: 140%;
+  }
+
   .main .month-container ul {
     width: 1050px;
   }
@@ -248,7 +254,8 @@ nav .person.block {
   .homepage .blurb {
     float: left;
     width: 300px;
-    padding-top: 145px;
+    padding-top: 250px;
+    margin-left: 70px;
   }
 
   .nonagon {
@@ -257,7 +264,7 @@ nav .person.block {
 
   .nonagon > div {
     position: absolute;
-    left: 900px;
+    left: 1030px;
     text-align: center;
   }
 
