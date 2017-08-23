@@ -1,9 +1,9 @@
+// -- Tabbing functionality --
 var tabs = document.querySelectorAll('.main li'),
     lastVisitedTab = document.querySelector('.jan'),
     lastVisitedCard = document.querySelector('.jan-container'),
     blockedMonths = ['aug', 'sep', 'oct', 'nov', 'dec'];
 
-// -- Tabbing functionality --
 tabs.forEach(function(tab) {
   if (blockedMonths.indexOf(tab.classList[0]) === -1) {
     tab.addEventListener("click", function(e) {
@@ -48,3 +48,19 @@ if (location.pathname === '/') {
 } else if (location.pathname.includes('people')) {
   partTab.classList.add('underline');
 }
+
+// -- Mouseover icons on homepage --
+var icons = document.querySelectorAll('.nonagon .icons');
+
+icons.forEach(function(icon) {
+  icon.addEventListener('mouseover', function () {
+    var className = icon.classList[1],
+        hoveredContainer = document.getElementById(className),
+        blurbContainers = document.querySelectorAll('.blurb-container');
+
+    blurbContainers.forEach(function(container) {
+      container.classList.remove('display');
+    });
+    hoveredContainer.classList.add('display');
+  });
+});

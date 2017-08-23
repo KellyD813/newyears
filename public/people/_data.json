@@ -1,5 +1,6 @@
 {
   "at": {
+    "Selector": "at",
     "Name": "A.T.",
     "Field": "Technology",
     "Ages": "27/28",
@@ -74,6 +75,7 @@
     "December5": "Have not collected data yet"
   },
   "alex": {
+    "Selector": "alex",
     "Name": "Alex",
     "Field": "Retail",
     "Ages": "28/29",
@@ -148,6 +150,7 @@
     "December5": "Have not collected data yet"
   },
   "becca": {
+    "Selector": "becca",
     "Name": "Becca",
     "Field": "Massage Therapy",
     "Ages": "28/29",
@@ -222,6 +225,7 @@
     "December5": "Have not collected data yet"
   },
   "george": {
+    "Selector": "george",
     "Name": "George",
     "Field": "Technology",
     "Ages": "32/33",
@@ -296,6 +300,7 @@
     "December5": "Have not collected data yet"
   },
   "jack": {
+    "Selector": "jack",
     "Name": "Jack",
     "Field": "Consulting",
     "Ages": "28/29",
@@ -370,6 +375,7 @@
     "December5": "Have not collected data yet"
   },
   "jane": {
+    "Selector": "jane",
     "Name": "Jane",
     "Field": "Retail",
     "Ages": "29/30",
@@ -444,6 +450,7 @@
     "December5": "Have not collected data yet"
   },
   "mitzi": {
+    "Selector": "mitzi",
     "Name": "Mitzi",
     "Field": "Education",
     "Ages": "59/60",
@@ -518,6 +525,7 @@
     "December5": "Have not collected data yet"
   },
   "olivia": {
+    "Selector": "olivia",
     "Name": "Olivia",
     "Field": "Law",
     "Ages": "24/25",
@@ -592,6 +600,7 @@
     "December5": "Have not collected data yet"
   },
   "zach": {
+    "Selector": "zach",
     "Name": "Zach",
     "Field": "Advocacy and Consulting",
     "Ages": "30/31",

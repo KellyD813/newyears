@@ -11,9 +11,13 @@
     <div class="icons mitzi"><a href="/people/mitzi"><img src="/images/mitzi.gif" alt="scale"></a></div>
     <div class="icons olivia"><a href="/people/olivia"><img src="/images/olivia.gif" alt="pencil"></a></div>
     <div class="icons zach"><a href="/people/zach"><img src="/images/zach.gif" alt="handcuffs"></a></div>
-    <div class="text">
-      <div>Name of person</div>
-      <div>Resolution blurb</div>
-    </div>
+    
+    <% for (var slug in public.people._data){ %>
+      <div id=<%= public.people._data[slug].Selector %> class="blurb-container">
+        <h2><%= public.people._data[slug].Name %></h2>
+        <div><%= public.people._data[slug].Resolution %></div>
+      </div>
+    <% }; %>
+
   </div>
 </div>

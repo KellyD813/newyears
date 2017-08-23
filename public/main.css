@@ -72,6 +72,18 @@ nav .person.block {
   padding-bottom: 15px;
 }
 
+.main .blurb-container {
+  display: none;
+}
+
+.main .blurb-container.display {
+  display: block;
+}
+
+.main .blurb-container div {
+  width: 200px;
+}
+
 .main ul {
   padding: 0;
 }
@@ -290,8 +302,8 @@ nav .person.block {
     transform: translate(-100px, 75px);
   }
 
-  .text {
-    transform: translate(115px, 315px);
+  .blurb-container {
+    transform: translate(70px, 285px);
   }
 
 }
