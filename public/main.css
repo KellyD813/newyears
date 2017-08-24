@@ -12,7 +12,8 @@ body {
 
 p,
 .about li,
-.person {
+.person,
+.homepage .blurb {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -76,16 +77,29 @@ nav .person.block {
   display: inline-block;
 }
 
+.homepage .blurb {
+  font-weight: 400;
+  font-size: 17px;
+}
+
 .homepage .blurb-container {
   display: none;
 }
 
-.homepage .blurb-container.display {
-  display: block;
-}
-
 .homepage .blurb-container div {
   width: 200px;
+}
+
+.homepage .icons {
+  display: inline-block;
+}
+
+.homepage .nonagon {
+  padding-top: 15px;
+  width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .main ul {
@@ -148,6 +162,7 @@ nav .person.block {
   cursor: default;
 }
 
+.homepage,
 .main,
 .about {
   padding-bottom: 75px;
@@ -175,14 +190,14 @@ nav .person.block {
 @media (min-width: 768px) {
 
   h1 {
-    padding: 25px 0 25px 0;
+    padding: 65px 0 25px 0;
   }
 
   nav {
     position: fixed;
     bottom: 0;
     top: 0;
-    padding: 0 30px;
+    padding: 0 15px;
     width: 200px;
     border-right: solid 1px #cccccc;
     text-align: left;
@@ -233,14 +248,29 @@ nav .person.block {
   .main,
   .about {
     margin-left: 215px;
-    padding: 0 100px 75px 100px;
+    padding: 0 100px 75px 60px;
     margin-bottom: 100px;
     width: 55%;
   }
 
+  .homepage .blurb {
+    width: 400px;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .homepage .nonagon {
+    padding-top: 25px;
+    width: 375px;
+  }
+
+  .homepage .icons {
+    padding: 10px;
+  }
+
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1200px) {
 
   h1,
   .main .info-container {
@@ -251,6 +281,16 @@ nav .person.block {
     width: 1050px;
   }
 
+  nav {
+    padding: 0 30px;
+  }
+
+  .homepage,
+  .main,
+  .about {
+    padding: 0 100px 75px 100px;
+  }
+
   .homepage .blurb {
     float: left;
     width: 300px;
@@ -258,64 +298,64 @@ nav .person.block {
     margin-left: 70px;
   }
 
-  .nonagon {
+  .homepage .nonagon {
     padding-top: 5px;
   }
 
-  .nonagon > div {
+  .homepage .nonagon > div {
     position: absolute;
     left: 1030px;
     text-align: center;
   }
 
-  .icons {
+  .homepage .icons {
     border-radius: 90px;
     padding: 25px;
   }
 
-  .icons:hover {
+  .homepage .icons:hover {
     background: rgba(0, 216, 218, .2);
     border-radius: 90px;
     padding: 25px;
   }
 
-  .alex {
+  .homepage .alex {
     transform: translate(90px, 0);
   }
 
-  .at {
+  .homepage .at {
     transform: translate(280px, 70px);
   }
 
-  .becca {
+  .homepage .becca {
     transform: translate(380px, 245px);
   }
 
-  .george {
+  .homepage .george {
     transform: translate(345px, 440px);
   }
 
-  .jack {
+  .homepage .jack {
     transform: translate(190px, 570px);
   }
 
-  .jane {
+  .homepage .jane {
     transform: translate(-10px, 570px);
   }
 
-  .mitzi {
+  .homepage .mitzi {
     transform: translate(-160px, 445px);
   }
 
-  .olivia {
+  .homepage .olivia {
     transform: translate(-200px, 245px);
   }
 
-  .zach {
+  .homepage .zach {
     transform: translate(-100px, 75px);
   }
 
-  .blurb-container {
+  .homepage .blurb-container {
     transform: translate(70px, 280px);
   }
 
