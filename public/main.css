@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background: #f4f4f7;
-  color: #4444444;
+  color: #444444;
   font-family: 'Roboto', sans-serif;
   line-height: 2;
 }
@@ -20,7 +20,7 @@ p,
 a,
 a:visited {
   padding-bottom: 3px;
-  color: #4444444;
+  color: #444444;
   text-decoration: none;
 }
 
@@ -255,7 +255,7 @@ nav .person.block {
   }
 
   .homepage .blurb {
-    width: 400px;
+    width: 95%;
     padding-top: 15px;
     font-family: 'Roboto', sans-serif;
   }
@@ -271,11 +271,15 @@ nav .person.block {
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 
   h1,
   .main .info-container {
-    width: 140%;
+    width: 125%;
+  }
+
+  h1 {
+    padding: 35px 0 25px 0;
   }
 
   .main .month-container ul {
@@ -293,75 +297,140 @@ nav .person.block {
   }
 
   .homepage .blurb {
-    float: left;
-    width: 300px;
-    padding-top: 250px;
-    margin-left: 70px;
+    width: 90%;
   }
 
   .homepage .nonagon {
-    padding-top: 5px;
+    padding-top: 1px;
   }
 
   .homepage .nonagon > div {
     position: absolute;
-    left: 1030px;
+    left: 450px;
     text-align: center;
   }
 
   .homepage .icons {
     border-radius: 90px;
-    padding: 25px;
+    padding: 20px;
   }
 
   .homepage .icons:hover {
     background: rgba(0, 216, 218, .2);
     border-radius: 90px;
-    padding: 25px;
+    padding: 20px;
   }
 
   .homepage .alex {
-    transform: translate(90px, 0);
+    transform: translate(90px, -20px);
   }
 
   .homepage .at {
-    transform: translate(280px, 70px);
+    transform: translate(241px, 37px);
   }
 
   .homepage .becca {
-    transform: translate(380px, 245px);
+    transform: translate(324px, 175px);
   }
 
   .homepage .george {
-    transform: translate(345px, 440px);
+    transform: translate(300px, 333px);
   }
 
   .homepage .jack {
-    transform: translate(190px, 570px);
+    transform: translate(175px, 435px);
   }
 
   .homepage .jane {
-    transform: translate(-10px, 570px);
+    transform: translate(4px, 435px);
   }
 
   .homepage .mitzi {
-    transform: translate(-160px, 445px);
+    transform: translate(-122px, 333px);
   }
 
   .homepage .olivia {
-    transform: translate(-200px, 245px);
+    transform: translate(-144px, 175px);
   }
 
   .homepage .zach {
-    transform: translate(-100px, 75px);
+    transform: translate(-61px, 37px);
   }
 
   .homepage .blurb-container {
-    transform: translate(70px, 280px);
+    transform: translate(66px, 198px);
   }
 
   .homepage .blurb-container.display {
     display: block;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  h1,
+  .main .info-container {
+    width: 140%;
+  }
+
+  .homepage .blurb {
+    float: left;
+    width: 300px;
+    padding-top: 200px;
+    margin-left: 70px;
+  }
+
+  .homepage .nonagon > div {
+    left: 925px;
+  }
+
+  .homepage .icons {
+    padding: 25px;
+  }
+
+  .homepage .icons:hover {
+    padding: 25px;
+  }
+
+  .homepage .alex {
+    transform: translate(90px, 50px);
+  }
+
+  .homepage .at {
+    transform: translate(241px, 107px);
+  }
+
+  .homepage .becca {
+    transform: translate(324px, 245px);
+  }
+
+  .homepage .george {
+    transform: translate(300px, 403px);
+  }
+
+  .homepage .jack {
+    transform: translate(175px, 505px);
+  }
+
+  .homepage .jane {
+    transform: translate(4px, 505px);
+  }
+
+  .homepage .mitzi {
+    transform: translate(-122px, 402px);
+  }
+
+  .homepage .olivia {
+    transform: translate(-144px, 245px);
+  }
+
+  .homepage .zach {
+    transform: translate(-61px, 107px);
+  }
+
+  .homepage .blurb-container {
+    transform: translate(66px, 268px);
   }
 
 }
