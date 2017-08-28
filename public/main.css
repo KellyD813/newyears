@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background: #f4f4f7;
-  color: #444;
+  color: #4444444;
   font-family: 'Roboto', sans-serif;
   line-height: 2;
 }
@@ -14,13 +14,13 @@ p,
 .about li,
 .person,
 .homepage .blurb {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 a,
 a:visited {
   padding-bottom: 3px;
-  color: #444;
+  color: #4444444;
   text-decoration: none;
 }
 
