@@ -1,0 +1,436 @@
+.hide {
+  display: none;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f7;
+  color: #444444;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+}
+
+p,
+.about li,
+.person,
+.homepage .blurb {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+a,
+a:visited {
+  padding-bottom: 3px;
+  color: #444444;
+  text-decoration: none;
+}
+
+h1 {
+  padding: 10px 0 25px 0;
+  margin: 0;
+  border-bottom: #cccccc solid 1px;
+  font-size: 59px;
+  line-height: 1.2em;
+}
+
+nav {
+  text-align: center;
+}
+
+nav .participants-link:hover,
+.main .month-container li:hover {
+  cursor: pointer;
+}
+
+nav .logo {
+  padding: 0;
+  border-bottom: #cccccc solid 1px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+nav .main-nav-links {
+  border-bottom: #cccccc solid 1px;
+}
+
+nav .part-nav-links {
+  padding: 15px 0;
+}
+
+nav .page {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav .person {
+  display: none;
+}
+
+nav .person.block {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.homepage h2 {
+  display: inline-block;
+}
+
+.homepage .blurb {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.homepage .blurb-container {
+  display: none;
+}
+
+.homepage .blurb-container div {
+  width: 200px;
+}
+
+.homepage .icons {
+  display: inline-block;
+}
+
+.homepage .nonagon {
+  padding-top: 15px;
+  width: 315px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.main ul {
+  padding: 0;
+}
+
+.main li {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+  padding-bottom: 3px;
+  border-bottom: solid 1px transparent;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.main .month-container li {
+  margin: 0 15px 5px 0;
+  padding-bottom: 0;
+  font-size: 20px;
+}
+
+.main .info-container {
+  padding: 25px 0;
+  border-bottom: #cccccc solid 1px;
+}
+
+.main .info-container,
+.main .month-container {
+  padding: 25px 0;
+}
+
+.main .part-title {
+  padding-right: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main .month-container div {
+  padding-top: 10px;
+}
+
+.main .month-container p {
+  padding-bottom: 10px;
+}
+
+.main .aug,
+.main .sep,
+.main .oct,
+.main .nov,
+.main .dec {
+  color: #cccccc;
+}
+
+.main .aug:hover,
+.main .sep:hover,
+.main .oct:hover,
+.main .nov:hover,
+.main .dec:hover {
+  cursor: default;
+}
+
+.homepage,
+.main,
+.about {
+  padding-bottom: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.main li.underline,
+.underline,
+.about a,
+.homepage h2,
+.main a {
+  border-bottom: solid 2px #1cd8d9;
+}
+
+.about p {
+  margin: 0;
+}
+
+.about .process {
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+
+  h1 {
+    padding: 65px 0 25px 0;
+    font-size: 65px;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    padding: 0 15px;
+    width: 200px;
+    border-right: solid 1px #cccccc;
+    text-align: left;
+  }
+
+  nav .logo {
+    padding: 25px 0;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  nav .part-nav-links {
+    padding: 0;
+  }
+
+  nav .page,
+  nav .person {
+    display: block;
+  }
+
+  nav .page {
+    padding-bottom: 20px;
+  }
+
+  nav .person {
+    margin-left: 50px;
+    padding-bottom: 15px;
+  }
+
+  nav .main-nav-links,
+  nav .participants-link.underline {
+    border-bottom: none;
+  }
+
+  nav .participants-link:hover {
+    cursor: default;
+  }
+
+  nav .underline {
+    border-bottom: none;
+  }
+
+  .underline {
+    padding-bottom: 10px;
+  }
+
+  .homepage,
+  .main,
+  .about {
+    margin-left: 215px;
+    padding: 0 100px 75px 60px;
+    margin-bottom: 100px;
+    width: 55%;
+  }
+
+  .homepage .blurb {
+    width: 95%;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .homepage .nonagon {
+    padding-top: 25px;
+    width: 375px;
+  }
+
+  .homepage .icons {
+    padding: 10px;
+  }
+
+}
+
+@media (min-width: 1300px) {
+
+  h1,
+  .main .info-container {
+    width: 125%;
+  }
+
+  h1 {
+    padding: 35px 0 25px 0;
+  }
+
+  .main .month-container ul {
+    width: 1050px;
+  }
+
+  nav {
+    padding: 0 30px;
+  }
+
+  .homepage,
+  .main,
+  .about {
+    padding: 0 100px 75px 100px;
+  }
+
+  .homepage .blurb {
+    width: 90%;
+  }
+
+  .homepage .nonagon {
+    padding-top: 1px;
+  }
+
+  .homepage .nonagon > div {
+    position: absolute;
+    left: 450px;
+    text-align: center;
+  }
+
+  .homepage .icons {
+    border-radius: 90px;
+    padding: 20px;
+  }
+
+  .homepage .icons:hover {
+    background: rgba(0, 216, 218, .2);
+    border-radius: 90px;
+    padding: 20px;
+  }
+
+  .homepage .alex {
+    transform: translate(90px, -20px);
+  }
+
+  .homepage .at {
+    transform: translate(241px, 37px);
+  }
+
+  .homepage .becca {
+    transform: translate(324px, 175px);
+  }
+
+  .homepage .george {
+    transform: translate(300px, 333px);
+  }
+
+  .homepage .jack {
+    transform: translate(175px, 435px);
+  }
+
+  .homepage .jane {
+    transform: translate(4px, 435px);
+  }
+
+  .homepage .mitzi {
+    transform: translate(-122px, 333px);
+  }
+
+  .homepage .olivia {
+    transform: translate(-144px, 175px);
+  }
+
+  .homepage .zach {
+    transform: translate(-61px, 37px);
+  }
+
+  .homepage .blurb-container {
+    transform: translate(66px, 198px);
+  }
+
+  .homepage .blurb-container.display {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  h1,
+  .main .info-container {
+    width: 140%;
+  }
+
+  .homepage .blurb {
+    float: left;
+    width: 300px;
+    padding-top: 200px;
+    margin-left: 70px;
+  }
+
+  .homepage .nonagon > div {
+    left: 925px;
+  }
+
+  .homepage .icons {
+    padding: 25px;
+  }
+
+  .homepage .icons:hover {
+    padding: 25px;
+  }
+
+  .homepage .alex {
+    transform: translate(90px, 50px);
+  }
+
+  .homepage .at {
+    transform: translate(241px, 107px);
+  }
+
+  .homepage .becca {
+    transform: translate(324px, 245px);
+  }
+
+  .homepage .george {
+    transform: translate(300px, 403px);
+  }
+
+  .homepage .jack {
+    transform: translate(175px, 505px);
+  }
+
+  .homepage .jane {
+    transform: translate(4px, 505px);
+  }
+
+  .homepage .mitzi {
+    transform: translate(-122px, 402px);
+  }
+
+  .homepage .olivia {
+    transform: translate(-144px, 245px);
+  }
+
+  .homepage .zach {
+    transform: translate(-61px, 107px);
+  }
+
+  .homepage .blurb-container {
+    transform: translate(66px, 268px);
+  }
+
+}
