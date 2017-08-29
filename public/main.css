@@ -7,7 +7,7 @@ body {
   background: #f4f4f7;
   color: #444444;
   font-family: 'Roboto', sans-serif;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 p,
@@ -251,7 +251,7 @@ nav .person.block {
     margin-left: 215px;
     padding: 0 100px 75px 60px;
     margin-bottom: 100px;
-    width: 55%;
+    width: 600px;
   }
 
   .homepage .blurb {
@@ -316,6 +316,12 @@ nav .person.block {
   }
 
   .homepage .icons:hover {
+    background: rgba(0, 216, 218, .2);
+    border-radius: 90px;
+    padding: 20px;
+  }
+
+  .homepage .icons.zach.at-start {
     background: rgba(0, 216, 218, .2);
     border-radius: 90px;
     padding: 20px;
@@ -390,6 +396,10 @@ nav .person.block {
   }
 
   .homepage .icons:hover {
+    padding: 25px;
+  }
+
+  .homepage .icons.zach.at-start {
     padding: 25px;
   }
 

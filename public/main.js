@@ -50,13 +50,21 @@ if (location.pathname === '/') {
 }
 
 // -- Mouseover icons on homepage --
-var icons = document.querySelectorAll('.nonagon .icons');
+var zach = document.getElementById('zach'),
+    icons = document.querySelectorAll('.nonagon .icons');
+
+zach.classList.add('display');
 
 icons.forEach(function(icon) {
   icon.addEventListener('mouseover', function () {
     var className = icon.classList[1],
         hoveredContainer = document.getElementById(className),
         blurbContainers = document.querySelectorAll('.blurb-container');
+
+    if (document.querySelector('.icons.zach.at-start')) {
+      document.querySelector('.icons.zach.at-start').classList.remove('at-start');
+      zach.classList.remove('display');
+    }
 
     blurbContainers.forEach(function(container) {
       container.classList.remove('display');
