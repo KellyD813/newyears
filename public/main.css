@@ -34,6 +34,7 @@ h1 {
 
 nav {
   text-align: center;
+  background-color: #FEFFFE;
 }
 
 nav .participants-link:hover,
@@ -42,7 +43,10 @@ nav .participants-link:hover,
 }
 
 nav .logo {
-  padding: 0;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
   border-bottom: #cccccc solid 1px;
   font-size: 24px;
   font-weight: 700;
@@ -50,10 +54,6 @@ nav .logo {
 }
 
 nav .main-nav-links {
-  border-bottom: #cccccc solid 1px;
-}
-
-nav .part-nav-links {
   padding: 15px 0;
 }
 
@@ -200,11 +200,11 @@ nav .person.block {
     top: 0;
     padding: 0 15px;
     width: 200px;
-    border-right: solid 1px #cccccc;
     text-align: left;
   }
 
   nav .logo {
+    width: 100%;
     padding: 25px 0;
     margin-bottom: 25px;
     text-align: left;
