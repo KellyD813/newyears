@@ -27,14 +27,14 @@ tabs.forEach(function(tab) {
 var homeTab = document.querySelector('.home-link'),
     aboutTab = document.querySelector('.about-link'),
     partTab = document.querySelector('.participants-link'),
-    partLinks = document.querySelectorAll('.person');
+    personLinks = document.querySelectorAll('.person');
 
 partTab.addEventListener('click', function() {
   homeTab.classList.remove('underline');
   aboutTab.classList.remove('underline');
   partTab.classList.add('underline');
 
-  partLinks.forEach(function(person) {
+  personLinks.forEach(function(person) {
     person.classList.add('block');
   });
 });
@@ -50,25 +50,29 @@ if (location.pathname === '/') {
 }
 
 // -- Mouseover icons on homepage --
-var zach = document.getElementById('zach'),
-    icons = document.querySelectorAll('.nonagon .icons');
+if (location.pathname === '/') {
 
-zach.classList.add('display');
+  var zach = document.getElementById('zach'),
+      icons = document.querySelectorAll('.nonagon .icons');
 
-icons.forEach(function(icon) {
-  icon.addEventListener('mouseover', function () {
-    var className = icon.classList[1],
-        hoveredContainer = document.getElementById(className),
-        blurbContainers = document.querySelectorAll('.blurb-container');
+  zach.classList.add('display');
 
-    if (document.querySelector('.icons.zach.at-start')) {
-      document.querySelector('.icons.zach.at-start').classList.remove('at-start');
-      zach.classList.remove('display');
-    }
+  icons.forEach(function(icon) {
+    icon.addEventListener('mouseover', function () {
+      var className = icon.classList[1],
+          hoveredContainer = document.getElementById(className),
+          blurbContainers = document.querySelectorAll('.blurb-container');
 
-    blurbContainers.forEach(function(container) {
-      container.classList.remove('display');
+      if (document.querySelector('.icons.zach.at-start')) {
+        document.querySelector('.icons.zach.at-start').classList.remove('at-start');
+        zach.classList.remove('display');
+      }
+
+      blurbContainers.forEach(function(container) {
+        container.classList.remove('display');
+      });
+      hoveredContainer.classList.add('display');
     });
-    hoveredContainer.classList.add('display');
   });
-});
+  
+}
