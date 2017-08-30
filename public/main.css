@@ -290,6 +290,10 @@ nav .person.block {
     padding: 10px;
   }
 
+  .about li {
+    line-height: 1.7;
+  }
+
 }
 
 @media (min-width: 1300px) {
