@@ -118,6 +118,7 @@ nav .person.block {
 .main .month-container li {
   margin: 0 15px 5px 0;
   padding-bottom: 0;
+  border-bottom: solid 2px transparent;
   font-size: 20px;
 }
 
@@ -146,19 +147,19 @@ nav .person.block {
   padding-bottom: 10px;
 }
 
-.main .aug,
-.main .sep,
-.main .oct,
-.main .nov,
-.main .dec {
+.main .month-container .aug,
+.main .month-container .sep,
+.main .month-container .oct,
+.main .month-container .nov,
+.main .month-container .dec {
   color: #cccccc;
 }
 
-.main .aug:hover,
-.main .sep:hover,
-.main .oct:hover,
-.main .nov:hover,
-.main .dec:hover {
+.main .month-container .aug:hover,
+.main .month-container .sep:hover,
+.main .month-container .oct:hover,
+.main .month-container .nov:hover,
+.main .month-container .dec:hover {
   cursor: default;
 }
 
@@ -264,14 +265,6 @@ nav .person.block {
   nav .participants-link:hover {
     cursor: default;
   }
-
-  /*nav .underline {
-    border-bottom: none;
-  }*/
-
-  /*.underline {
-    padding-bottom: 10px;
-  }*/
 
   .homepage,
   .main,
