@@ -214,18 +214,14 @@ nav .person.block {
     padding: 0;
   }
 
-  nav .page,
-  nav .person {
-    display: block;
-  }
-
   nav .page {
-    padding-bottom: 20px;
+    padding: 0;
+    margin: 0 10px 20px 10px;
   }
 
   nav .person {
     margin-left: 50px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   nav .main-nav-links,
@@ -233,17 +229,49 @@ nav .person.block {
     border-bottom: none;
   }
 
+  nav .main-nav-links,
+  nav .part-nav-links {
+    line-height: 2;
+  }
+
+  nav .part-nav-links {
+    width: 125px;
+  }
+
+  nav .home-link,
+  nav .about-link,
+  nav .person {
+    display: inline-block;
+  }
+
+  nav .home-link,
+  nav .about-link,
+  nav .part-nav-links div {
+    border-bottom: solid 2px transparent;
+  }
+
+  nav .home-link:hover,
+  nav .about-link:hover,
+  nav .part-nav-links div:hover {
+    border-bottom: solid 2px #1cd8d9;
+  }
+
+  nav .main-nav-links {
+    padding: 0;
+    width: 100px;
+  }
+
   nav .participants-link:hover {
     cursor: default;
   }
 
-  nav .underline {
+  /*nav .underline {
     border-bottom: none;
-  }
+  }*/
 
-  .underline {
+  /*.underline {
     padding-bottom: 10px;
-  }
+  }*/
 
   .homepage,
   .main,
