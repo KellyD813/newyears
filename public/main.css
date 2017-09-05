@@ -4,10 +4,10 @@
 
 body {
   margin: 0;
-  background: #f4f4f7;
-  color: #444444;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  background-color: #f4f4f7;
+  color: #444444;
 }
 
 p,
@@ -34,7 +34,7 @@ h1 {
 
 nav {
   text-align: center;
-  background-color: #FEFFFE;
+  background-color: #fefffe;
 }
 
 nav .participants-link:hover,
@@ -78,7 +78,7 @@ nav .person.block {
 }
 
 .homepage .blurb {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 17px;
 }
 
@@ -225,6 +225,11 @@ nav .person.block {
     margin-bottom: 15px;
   }
 
+  nav .person.block {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+
   nav .main-nav-links,
   nav .participants-link.underline {
     border-bottom: none;
@@ -270,9 +275,9 @@ nav .person.block {
   .main,
   .about {
     margin-left: 215px;
-    padding: 0 100px 75px 60px;
+    padding: 0 0 75px 60px;
     margin-bottom: 100px;
-    width: 600px;
+    width: 60%;
   }
 
   .homepage .blurb {
@@ -290,13 +295,13 @@ nav .person.block {
     padding: 10px;
   }
 
-  .about li {
-    line-height: 1.7;
+  .about .credit li {
+    line-height: 1.7;ha
   }
 
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1275px) {
 
   h1,
   .main .info-container {
@@ -321,35 +326,39 @@ nav .person.block {
     padding: 0 100px 75px 100px;
   }
 
-  .homepage .blurb {
-    width: 90%;
+  .homepage h1 {
+    border-bottom: none;
+    padding: 125px 0 25px 0;
+    width: 50%;
   }
 
-  .homepage .nonagon {
-    padding-top: 1px;
+  .homepage .blurb {
+    width: 300px;
+    font-size: 19px;
+    font-weight: 700;
+    padding-top: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
   }
 
   .homepage .nonagon > div {
     position: absolute;
-    left: 450px;
+    left: 800px;
+    top: 160px;
     text-align: center;
   }
 
   .homepage .icons {
     border-radius: 90px;
     padding: 20px;
+    border: solid 2px transparent;
   }
 
-  .homepage .icons:hover {
-    background: rgba(0, 216, 218, .2);
-    border-radius: 90px;
-    padding: 20px;
-  }
-
+  .homepage .icons:hover,
   .homepage .icons.zach.at-start {
-    background: rgba(0, 216, 218, .2);
-    border-radius: 90px;
+    border-radius: 100px;
     padding: 20px;
+    border: solid 2px #1cd8d9;
   }
 
   .homepage .alex {
@@ -398,74 +407,21 @@ nav .person.block {
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1550px) {
 
-  h1,
-  .main .info-container {
-    width: 140%;
+  .homepage h1 {
+    padding: 165px 0 25px 0;
+    width: 100%;
   }
 
   .homepage .blurb {
-    float: left;
-    width: 300px;
-    padding-top: 200px;
-    margin-left: 70px;
+    width: 435px;
+    font-size: 23px;
   }
 
   .homepage .nonagon > div {
-    left: 925px;
-  }
-
-  .homepage .icons {
-    padding: 25px;
-  }
-
-  .homepage .icons:hover {
-    padding: 25px;
-  }
-
-  .homepage .icons.zach.at-start {
-    padding: 25px;
-  }
-
-  .homepage .alex {
-    transform: translate(90px, 50px);
-  }
-
-  .homepage .at {
-    transform: translate(241px, 107px);
-  }
-
-  .homepage .becca {
-    transform: translate(324px, 245px);
-  }
-
-  .homepage .george {
-    transform: translate(300px, 403px);
-  }
-
-  .homepage .jack {
-    transform: translate(175px, 505px);
-  }
-
-  .homepage .jane {
-    transform: translate(4px, 505px);
-  }
-
-  .homepage .mitzi {
-    transform: translate(-122px, 402px);
-  }
-
-  .homepage .olivia {
-    transform: translate(-144px, 245px);
-  }
-
-  .homepage .zach {
-    transform: translate(-61px, 107px);
-  }
-
-  .homepage .blurb-container {
-    transform: translate(66px, 268px);
+    left: 1065px;
+    top: 160px;
   }
 
 }
