@@ -1,4 +1,4 @@
-// -- Tabbing functionality --
+// -- Tabbing through Months --
 var tabs = document.querySelectorAll('.main li'),
     lastVisitedTab = document.querySelector('.jan'),
     lastVisitedCard = document.querySelector('.jan-container'),
@@ -6,7 +6,7 @@ var tabs = document.querySelectorAll('.main li'),
 
 tabs.forEach(function(tab) {
   if (blockedMonths.indexOf(tab.classList[0]) === -1) {
-    tab.addEventListener("click", function(e) {
+    tab.addEventListener('click', function(e) {
       var clicked = document.querySelector('.' + e.target.classList[0] + '-container');
       if (lastVisitedCard !== clicked) {
 
