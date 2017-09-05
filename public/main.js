@@ -2,7 +2,7 @@
 var tabs = document.querySelectorAll('.main li'),
     lastVisitedTab = document.querySelector('.jan'),
     lastVisitedCard = document.querySelector('.jan-container'),
-    blockedMonths = ['aug', 'sep', 'oct', 'nov', 'dec'];
+    blockedMonths = ['sep', 'oct', 'nov', 'dec'];
 
 tabs.forEach(function(tab) {
   if (blockedMonths.indexOf(tab.classList[0]) === -1) {
@@ -74,5 +74,5 @@ if (location.pathname === '/') {
       hoveredContainer.classList.add('display');
     });
   });
-  
+
 }

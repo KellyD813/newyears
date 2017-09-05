@@ -147,7 +147,6 @@ nav .person.block {
   padding-bottom: 10px;
 }
 
-.main .month-container .aug,
 .main .month-container .sep,
 .main .month-container .oct,
 .main .month-container .nov,
@@ -155,7 +154,6 @@ nav .person.block {
   color: #cccccc;
 }
 
-.main .month-container .aug:hover,
 .main .month-container .sep:hover,
 .main .month-container .oct:hover,
 .main .month-container .nov:hover,
