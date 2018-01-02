@@ -147,20 +147,6 @@ nav .person.block {
   padding-bottom: 10px;
 }
 
-.main .month-container .sep,
-.main .month-container .oct,
-.main .month-container .nov,
-.main .month-container .dec {
-  color: #cccccc;
-}
-
-.main .month-container .sep:hover,
-.main .month-container .oct:hover,
-.main .month-container .nov:hover,
-.main .month-container .dec:hover {
-  cursor: default;
-}
-
 .homepage,
 .main,
 .about,
