@@ -1,26 +1,23 @@
 // -- Tabbing through Months --
 var tabs = document.querySelectorAll('.main li'),
     lastVisitedTab = document.querySelector('.jan'),
-    lastVisitedCard = document.querySelector('.jan-container'),
-    blockedMonths = ['sep', 'oct', 'nov', 'dec'];
+    lastVisitedCard = document.querySelector('.jan-container');
 
 tabs.forEach(function(tab) {
-  if (blockedMonths.indexOf(tab.classList[0]) === -1) {
-    tab.addEventListener('click', function(e) {
-      var clicked = document.querySelector('.' + e.target.classList[0] + '-container');
-      if (lastVisitedCard !== clicked) {
+  tab.addEventListener('click', function(e) {
+    var clicked = document.querySelector('.' + e.target.classList[0] + '-container');
+    if (lastVisitedCard !== clicked) {
 
-        clicked.classList.remove('hide');
-        lastVisitedCard.classList.add('hide');
-        lastVisitedCard = clicked;
+      clicked.classList.remove('hide');
+      lastVisitedCard.classList.add('hide');
+      lastVisitedCard = clicked;
 
-        e.target.classList.add('underline');
-        lastVisitedTab.classList.remove('underline');
-        lastVisitedTab = e.target;
+      e.target.classList.add('underline');
+      lastVisitedTab.classList.remove('underline');
+      lastVisitedTab = e.target;
 
-      }
-    });
-  }
+    }
+  });
 });
 
 // -- Navigation on Mobile --

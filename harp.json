@@ -9,10 +9,9 @@
     "Middle4" : "At the time of this survey, we are nearing the end of the month. Does the time of year bear any weight on your conscience regarding your goal?",
     "Middle5" : "Do you plan to continue your path towards achieving your 2017 Resolution?",
     "Middle6" : "Does my involvement make any impact on your feelings/resolution progress?",
-    "End1" : "XXX - A",
-    "End2" : "XXX - B",
-    "End3" : "XXX - C",
-    "End4" : "XXX - D",
-    "End5" : "XXX - E"
+    "End1" : "Did you complete your 2017 New Year's resolution?",
+    "End2" : "How do you feel about completing/not completing your New Year's resolution?",
+    "End3" : "Do you think my involvement throughout the year made you work towards or complete your resolution?",
+    "End4" : "Will you be making a 2018 New Year's resolution?"
   }
 }
